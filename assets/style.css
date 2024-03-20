@@ -1,0 +1,475 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+**{
+	font-family: sans-serif;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** end reset css**/
+body {
+	/* max-width: 1140px; */
+	margin: auto;
+	font-family: 'Work Sans';
+	font-size: 14px;
+	background: ghostwhite;
+}
+
+header {
+	display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+    padding: 17px 80px;
+}
+
+section {
+	margin: 50px 0
+}
+
+h1 {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Syne';
+	font-size: 22px;
+	font-weight: 800;
+	color: #B1663C
+}
+
+h1>span {
+	font-family: 'Work Sans';
+	font-size: 10px;
+	letter-spacing: 0.1em;
+	;
+}
+
+h2 {
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 30px;
+	color: #1D6154
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+
+}
+
+nav li {
+	padding: 0 10px;
+	font-size: 1.2em;
+}
+
+li:hover {
+	color: #B1663C;
+}
+
+#introduction {
+	display: flex;
+	align-items: center;
+}
+
+#introduction figure {
+	flex: 1
+}
+
+#introduction img {
+	display: block;
+	margin: auto;
+	width: 80%;
+}
+
+#introduction article {
+	flex: 1
+}
+
+#introduction h2 {
+	margin-bottom: 1em;
+}
+
+#introduction p {
+	margin-bottom: 0.5em;
+}
+
+#portfolio h2 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.gallery {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.gallery img {
+	width: 100%;
+
+}
+
+#contact {
+	width: 50%;
+	margin: auto;
+}
+
+#contact>* {
+	text-align: center;
+
+}
+
+#contact h2 {
+	margin-bottom: 20px;
+}
+
+#contact form {
+	text-align: left;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact input, select {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+#contact label {
+	margin: 2em 0 1em 0;
+}
+
+#contact textarea {
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+input[type="submit"] {
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #1D6154;
+	margin: 2em auto;
+	width: 180px;
+	text-align: center;
+	border-radius: 60px;
+}
+
+footer nav ul {
+	display: flex;
+	justify-content: flex-end;
+	margin: 2em
+}
+
+/*ma partie*/
+.entete {
+	background: #ffff;
+	height: 100%;
+	margin: 17px 0px 0px 11px;
+}
+.login{
+	margin: 10px 15px -14px 8px;
+    font-size: 29px;
+}
+.main{
+    margin: 0px 120px 1px 100px;
+}
+.liste-bouton {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.bordire_bouton {
+    padding: 10px 50px 10px 50px;
+    border: solid 1px cadetblue;
+    border-radius: 30px;
+    margin: 10px;
+}
+.bleux{
+	background-color: #1D6154;
+	color: aliceblue;
+}
+.editer{
+    background: black;
+    width: 1177px;
+    height: 40px;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui;
+    font-size: 23px;
+}
+.titre-edit{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.edit{
+    padding: 20px;
+	cursor: pointer;
+}
+.hipope{
+    width: 444px;
+    background: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    top: 90px;
+    left: 31%;
+	border-radius: 10px;
+}
+.hipope1{
+    margin: 10px 60px 10px 60px;
+	width: 80%;
+}
+.hipope2 {
+    margin: 12px 10px 63px 306px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.add{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    height: 100%;
+    width: 100%;
+	display: none;
+}
+.add1{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    height: 100%;
+    width: 100%;
+	display: none;
+}
+.bordire_bouton1 {
+    padding: 10px 50px 10px 50px;
+    border: solid 1px cadetblue;
+    border-radius: 30px;
+    margin: 10px;
+	background-color: #1D6154;
+	color: aliceblue;
+	cursor: pointer;
+}
+.bar {
+    margin: 30px 1px 30px 1px;
+    width: 100%;
+}
+.font-hipope {
+    margin: 22px;
+    font-family: sans-serif;
+    font-size: 22px;
+}
+form {
+	text-align: left;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+input, select {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+label {
+	margin: 2em 0 1em 0;
+}
+.hipope-fleche {
+	font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+.bordire_bouton2 {
+    padding: 10px 50px 10px 50px;
+    border: solid 1px rgb(195, 195, 195);
+    border-radius: 30px;
+    margin: 10px;
+	background-color: #c1c3c2;
+	color: aliceblue;
+	cursor: pointer;
+}
+form img{
+	width: 330px;
+	height: 130px;
+	background-color: #1D6154;
+}
+.label-image{
+	position: fixed;
+	top: 300px;
+		display: flex;
+		background: cadetblue;
+		right: 44%;
+		padding: 8px 24px 8px 24px;
+		border-radius: 7px;
+}
+#input-file{
+	display: none;
+}
+
+.gallerie {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+}
+
+.gallerie img {
+	width: 100%;
+}
+.corbeil {
+	cursor: pointer;
+	width: 19px;
+    height: 19px;
+    padding-top: 5px;
+	background-color: black;
+	color: #ffff;
+    position: absolute;
+    z-index: 2;
+    margin: 4px 1px 1px 38px;
+}
